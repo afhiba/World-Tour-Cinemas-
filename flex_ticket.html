@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+    <!-- Exercise 16-2: A Flexible Online Menu -->
+    <meta charset="UTF-8">
+    <title>Flexbox</title>
+
+    <style>
+        html {
+            box-sizing: border-box;
+        }
+
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            line-height: 1.5em;
+        }
+
+        h1 {
+            font-size: 4em;
+            font-weight: normal;
+        }
+
+        h2 {
+            font-size: 1.2em;
+            margin-top: 0;
+        }
+
+        #ticket {
+            border: 3px solid #783F27;
+            display: flex;
+            align-items: stretch;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+
+        section {
+            background: #F6F3ED;
+            margin: 10px;
+            padding: 20px;
+            border: 1px dotted maroon;
+            width: 240px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .title {
+            background-color: #783F27;
+            color: #F9AB33;
+            line-height: 4em;
+        }
+
+        .level {
+            font-weight: bold;
+            background: #F9AB33;
+            padding: 5px;
+            width: 100%;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        nav ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+
+            nav ul li {
+                display: inline-block;
+                margin-right: 10px;
+            }
+
+        nav a {
+            text-decoration: none;
+            padding: 8px 12px;
+            border: 1px solid #008080;
+            color: #008080;
+            border-radius: 5px;
+        }
+
+            nav a:hover {
+                background-color: #008080;
+                color: #fff;
+            }
+    </style>
+
+</head>
+
+<body>
+    <div id="ticket">
+        <section class="title">
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="index-link">Main</a></li>
+                </ul>
+            </nav>
+            <h1>Ranks for Golden Tickets</h1>
+        </section>
+
+        <section class="gt">
+            <h2>1<br>Standard Golden Ticket</h2>
+            <p class="info">The Standard Golden Ticket Class elevates your movie experience with premium seating, exclusive amenities, and personalized services for an unforgettable cinematic journey.</p>
+            <p class="photo"><img src="seating.jpg" width="200" height="100" alt=""></p>
+            <p class="level">Standard</p>
+        </section>
+
+        <section class="gt">
+            <h2>2<br>Premiere Golden Ticket</h2>
+            <p class="info">The Premiere Golden Ticket delivers elite luxury with exclusive amenities, VIP screenings, and personalized concierge services for an unparalleled cinematic indulgence.</p>
+            <p class="photo"><img src="seating.jpg" width="200" height="100" alt=""></p>
+            <p class="level">Premiere</p>
+        </section>
+
+        <section class="gt">
+            <h2>3<br>Executive Golden Ticket</h2>
+            <p class="info">The Executive Golden Ticket delivers elite perks and premium amenities for an unmatched cinematic experience.</p>
+            <p class="photo"><img src="seating.jpg" width="200" height="100" alt=""></p>
+            <p class="level">Executive</p>
+        </section>
+
+        <section class="gt">
+            <h2>4<br>Elite Golden Ticket</h2>
+            <p class="info">
+                The Elite Golden Ticket offers unparalleled luxury, exclusive amenities, and personalized services for an extraordinary cinematic experience. <em>Highest rank!</em>
+            </p>
+            <p class="photo"><img src="seating.jpg" width="200" height="100" alt=""></p>
+            <p class="level">Elite</p>
+        </section>
+    </div>
+</body>
+</html>

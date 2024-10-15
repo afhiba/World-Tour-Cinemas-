@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Form with at least 3 elements and places form content in an email message -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: maroon;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        form {
+            width: 60%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        fieldset {
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        legend {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: maroon;
+        }
+
+        ol {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: maroon;
+            color: #fff;
+            font-size: 1em;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+            input[type="submit"]:hover {
+                background-color: #800000;
+            }
+
+        nav ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+
+            nav ul li {
+                display: inline-block;
+                margin-right: 10px;
+            }
+
+        nav a {
+            text-decoration: none;
+            padding: 8px 12px;
+            border: 1px solid #008080;
+            color: #008080;
+            border-radius: 5px;
+        }
+
+            nav a:hover {
+                background-color: #008080;
+                color: #fff;
+            }
+    </style>
+    <script>
+        function showMessage() {
+            alert("Your message has been sent");
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="index-link">Main</a></li>
+        </ul>
+    </nav>
+    <h1>Contact Us</h1>
+    <form action="mailto:worldtourcinemas@outlook.com" method="POST" enctype="text/plain" onsubmit="showMessage()">
+        <fieldset>
+            <legend>Send us a message</legend>
+            <ol>
+                <li>
+                    <label for="fullname">Name:</label>
+                    <input type="text" name="fullname" id="fullname" required>
+                </li>
+                <li>
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email" required>
+                </li>
+                <li>
+                    <label for="subject">Subject:</label>
+                    <input type="text" name="subject" id="subject" required>
+                </li>
+                <li>
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" rows="8" required></textarea>
+                </li>
+                <li>
+                    <label>How did you hear about us?</label><br>
+                    <input type="radio" name="hear_about" value="Friends/Family" id="friends_family" required>
+                    <label for="friends_family">Friends/Family</label><br>
+                    <input type="radio" name="hear_about" value="Social Media" id="social_media">
+                    <label for="social_media">Social Media</label><br>
+                    <input type="radio" name="hear_about" value="Newspaper" id="newspaper">
+                    <label for="newspaper">Newspaper</label><br>
+                    <input type="radio" name="hear_about" value="Other" id="other">
+                    <label for="other">Other</label>
+                </li>
+            </ol>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
+
+

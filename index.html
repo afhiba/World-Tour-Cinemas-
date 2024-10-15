@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>World Tour Cinemas</title>
+
+    <!-- New CSS Styles for Headers, Lists, Articles, and Tables -->
+    <style>
+        body {
+            background-color: #faf2e4;
+            margin: 0 10%;
+            font-family: sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: serif;
+            font-weight: normal;
+            text-transform: uppercase;
+            margin-top: 30px;
+        }
+
+        h2 {
+            color: #d1633c;
+            font-size: 1em;
+        }
+
+        h3 {
+            color: #008080;
+            font-size: 2em;
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+
+        h4 {
+            color: #d1633c;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        h5 {
+            color: #008080;
+            font-size: 1em;
+        }
+
+        h6 {
+            color: #000000;
+            font-size: 1em;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 15px;
+        }
+
+        ul li {
+              margin-bottom: 30px;
+        }
+
+        ol {
+            list-style: decimal;
+            padding-left: 30px;
+        }
+
+        ol li {
+              margin-bottom: 15px;
+        }
+
+        .event {
+            margin-bottom: 30px;
+            border: 1px solid #ccc;
+            padding: 15px;
+        }
+
+        .event header {
+               font-size: 0.8em;
+               color: #888;
+        }
+
+        td, th {
+            border: 1px solid #CCC;
+        }
+
+        table {
+            border: 1px solid black;
+        }
+
+        form {
+            margin-top: 30px;
+        }
+
+        video {
+            margin-top: -50px;
+        }
+
+        nav ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            padding: 8px 12px;
+            border: 1px solid #008080;
+            color: #008080;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+                background-color: #008080;
+                color: #fff;
+        }
+
+        .external-links {
+            margin-top: 30px;
+        }
+
+        .external-links h3 {
+                color: #d1633c;
+                font-size: 1.5em;
+        }
+
+        .external-links div {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: left;
+        }
+
+        .external-link {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #008080;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .external-link:hover {
+                background-color: #005050;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><img src="movietheater.png" alt="logo"><br>World Tour Cinemas </h1>
+    <!-- Exercise 5-3: Usage of "nav" for navigation links -->
+    <!-- 5 Internal Links -->
+    <nav>
+        <ul>
+            <li><a href="index.html" class="index-link">Main</a></li>
+            <li><a href="newofferings.html" class="no-link">New Offerings</a></li>
+            <li><a href="faq.html" class="faq-link">FAQ</a></li>
+            <li><a href="contact.html" class="contact-link">Contact</a></li>
+            <li><a href="reviews.html" class="reviews-link">Reviews</a></li>
+        </ul>
+    </nav>
+    <h2>Movie Theater</h2>
+    <p>
+        The World Tour Cinemas Movie Theater is a hubspot for people of all
+        ages to enjoy. There are many categories to choose from, ensuring
+        that everyone is satisfied.
+    </p>
+
+    <h2>Experience</h2>
+    <p>
+        Choose your desired film, whether it be horror or action. <em>
+            Purchase your ticket,
+        </em> grab a bag of popcorn with your choice of drink, and enjoy.
+    </p>
+
+    <h2>Loyalty Program</h2>
+    <p>
+        Enroll yourself in the World Tour Cinemas Loyalty Program today
+        and enjoy a special discount on your first ticket purchase, along
+        with many other benefits.
+    </p>
+
+    <!-- Exercise 9-1, 9-2, 9-3, 9-4: Creating a Form for a Movie Theater Membership -->
+    <!-- Includes Radio Buttons, Checkboxes, Pull-Down Menus, Labels, and Fieldsets -->
+    <h5>Movie Theater Membership Form</h5>
+    <form action="" method="post">
+
+        <fieldset>
+            <legend>Membership Information</legend>
+
+            <ul>
+                <li><label for="form-name">Name:</label> <input type="text" name="username" id="form-name"></li>
+                <li><label for="form-email">Email:</label> <input type="email" name="emailaddress" id="form-email"></li>
+                <li><label for="form-tel">Phone Number:</label> <input type="tel" name="telephone" id="form-tel"></li>
+                <li>
+                    <label for="form-comments">Mailing Address:</label><br>
+                    <textarea name="comments" rows="4" cols="60" maxlength="400" id="form-comments" placeholder="No more than 400 characters long"></textarea>
+                </li>
+                <li>
+                    <label for="form-membership">Select Membership Type:</label>
+                    <select name="membership" id="form-membership">
+                        <option value="basic">Basic Membership</option>
+                        <option value="premium">Premium Membership</option>
+                        <option value="vip">VIP Membership</option>
+                    </select>
+                </li>
+            </ul>
+        </fieldset>
+
+        <h6>Choose Additional Options:</h6>
+
+        <fieldset>
+            <legend>Additional Options</legend>
+
+            <fieldset>
+                <legend>Membership Extras <em>(Choose as many as you want)</em></legend>
+                <ul>
+                    <li><input type="checkbox" name="extras[]" value="discounts"> Exclusive Discounts</li>
+                    <li><input type="checkbox" name="extras[]" value="previews"> Early Movie Previews</li>
+                    <li><input type="checkbox" name="extras[]" value="merchandise"> Free Merchandise</li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferred Seating</legend>
+                <p>
+                    Choose your preferred seating section: <select name="seating" size="1">
+                        <option>Regular</option>
+                        <option>VIP</option>
+                        <option>Executive</option>
+                    </select>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Primary Contact Method</legend>
+                <ul>
+                    <li><label><input type="radio" name="contact_method" value="text"> Text</label></li>
+                    <li><label><input type="radio" name="contact_method" value="email"> Email</label></li>
+                </ul>
+            </fieldset>
+
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Join the Membership Program">
+            <input type="reset">
+        </p>
+    </form>
+
+    <!-- Exercise 5-1: An Unordered List of Movies and Their Show Times -->
+    <h2>Current Movies and Show Times</h2>
+    <ul>
+        <li>
+            <strong>Migration:</strong> Showtimes - 1:00 PM, 4:00 PM, 7:00 PM
+        </li>
+        <li>
+            <strong>Wonka:</strong> Showtimes - 2:00 PM, 5:00 PM, 8:00 PM
+        </li>
+        <li>
+            <strong>Anyone But You:</strong> Showtimes - 3:00 PM, 6:00 PM, 9:00 PM
+        </li>
+        <li>
+            <strong>Dune:</strong> Showtimes - 1:30 PM, 4:30 PM, 7:30 PM
+        </li>
+        <li>
+            <strong>Barbie:</strong> Showtimes - 2:30 PM, 5:30 PM, 8:30 PM
+        </li>
+        <li>
+            <strong>Mean Girls:</strong> Showtimes - 3:30 PM, 6:30 PM, 9:30 PM
+        </li>
+        <li>
+            <strong>Titanic:</strong> Showtimes - 2:15 PM, 5:15 PM, 8:15 PM
+        </li>
+        <li>
+            <strong>Shrek 2:</strong> Showtimes - 1:45 PM, 4:45 PM, 7:45 PM
+        </li>
+    </ul>
+
+    <!-- Exercise 5-1: An Ordered List of Ticket Prices for the Movie Theater -->
+    <h2>Ticket Pricing</h2>
+    <ol>
+        <li>
+            <strong>Children (under 12):</strong> $8.00
+        </li>
+        <li>
+            <strong>Students (with ID):</strong> $9.00
+        </li>
+        <li>
+            <strong>Adults:</strong> $12.00
+        </li>
+        <li>
+            <strong>Seniors (65+):</strong> $10.00
+        </li>
+    </ol>
+
+    <h3>Win Free Tickets</h3>
+    <!-- Exercise 5-1: Image for Special Content Element -->
+    <img src="free_tickets_image.png" alt="Win Free Tickets Image">
+
+    <p>
+        <br />
+        Join the fun at World Tour Cinemas, where there is more than just movies that awaits you.
+        Explore our scavenger hunt times for a chance to win free tickets.
+    </p>
+    <!-- Exercise 5-1: Blockquote for Special Content Element -->
+    <blockquote>
+        <p>
+            The scavenger hunt is quite simple. On Mondays and Sundays, World Tour Cinemas
+            will put out vouchers under random seats throughout the show rooms. You will
+            receive a piece of paper upon entry, with hints to where these seats with the
+            vouchers may be. When you find a voucher, hold onto it. You will have the chance
+            to redeem it for any movie of your liking, anytime.
+        </p>
+    </blockquote>
+
+    <!-- Exercise 5-3: Additional News/Updates Page -->
+    <header>
+        <h4>World Tour Cinemas Latest</h4>
+    </header>
+
+    <!-- Exercise 5-3: Article #1 with Sections -->
+    <h3>What's New?</h3>
+    <article class="event">
+        <header>
+            <p>posted by World Tour Cinemas, <time datetime="2024-02-13" pubdate>February 13, 2024</time></p>
+        </header>
+
+        <section id="variety-popcorn">
+            <p>
+                Check out our latest additions and soon to be fan favorites. Come and try out
+                these awesome new menu options.
+            </p>
+            <h2>Variety Popcorn</h2>
+            <p>
+                Introducing our all-new "Variety Popcorn" selection! Elevate your movie experience with popcorn
+                choices like never before. Whether you're a fan of classic flavors or seeking a bold taste
+                adventure, we have something for everyone.
+            </p>
+            <dl>
+                <dt>Salt and Pepper Popcorn</dt>
+                <dd>Classic seasoning for a timeless taste</dd>
+
+                <dt>Butter Popcorn</dt>
+                <dd>Rich and buttery, a classic indulgence</dd>
+
+                <dt>Ranch Popcorn</dt>
+                <dd>Cool and herby, a delightful twist</dd>
+
+                <dt>Cheddar Popcorn</dt>
+                <dd>Cheesy goodness to satisfy your cravings</dd>
+
+                <dt>Caramel Popcorn</dt>
+                <dd>Sweet and savory, a perfect treat</dd>
+
+                <dt>Sweet Kernel Popcorn</dt>
+                <dd>For those who prefer a sweet popcorn experience</dd>
+
+                <dt>Spicy Garlic Parmesan Popcorn</dt>
+                <dd>A bold and zesty combination with a cheesy finish</dd>
+
+                <dt>Ultimate Mix Popcorn</dt>
+                <dd>The perfect blend of all flavors for the ultimate popcorn experience</dd>
+            </dl>
+        </section>
+
+        <section id="specials">
+            <h2>Specials</h2>
+            <p>
+                Indulge in our delicious NYC style pizza served with your choice of salted breadsticks or cinnamon
+                breadsticks. Our pizza is crafted with high-quality ingredients to ensure a delightful
+                experience.
+            </p>
+        </section>
+
+        <section id="limited-edition-drinks">
+            <h2>Limited-Edition Drinks</h2>
+            <p>Quench your thirst with our standard size exclusive limited-edition drinks:</p>
+            <dl>
+                <dt class="newitem">Cola Twist &mdash;<strong> new item!</strong> </dt>
+                <dd>Coca Cola, vanilla ice cream, cherry syrup, and a spritz of lemon juice</dd>
+
+                <dt class="newitem">Pineapple Swirl &mdash;<strong> new item!</strong></dt>
+                <dd>Pineapple flavored slushie with natural citrus flavors</dd>
+            </dl>
+            <p>These refreshing beverages are available for a limited time only, so don't miss out!</p>
+            <p>Cola Twist: <span class="price"><small>$5.95</small></span></p>
+            <p>Pineapple Swirl: <span class="price"><small>$4.95</small></span></p>
+        </section>
+    </article>
+
+    <!-- Exercise 5-2: Article #2 with Inline Elements -->
+    <h3>Upcoming Events</h3>
+    <article class="event">
+        <header>
+            <p>posted by <cite>World Tour Cinemas</cite>, <time datetime="2024-02-10">February 10, 2024</time></p>
+        </header>
+        <h2>Red Carpet Premiere: <i>New Releases Showcase</i></h2>
+        <p>
+            Join us for a glamorous <em>red carpet premiere</em> event featuring the latest blockbuster releases.
+            Experience the excitement of Hollywood right here at World Tour Cinemas. The event will showcase multiple
+            new releases from various genres, including action, drama, comedy, and more. Our state-of-the-art theaters
+            and surround sound systems will immerse you in the world of cinema like never before.
+        </p>
+        <p>Date: <time datetime="2024-03-10">March 10, 2024</time> | Time: <dfn>6:30 PM</dfn></p>
+        <p>For reservations, contact us before <time datetime="2024-03-01">March 1</time>.</p>
+        <p>Email: <dfn>info@worldtourcinemas.com</dfn> | Phone: <small>586-123-0000</small></p>
+        <p><q>Experience the magic of cinema at World Tour Cinemas.</q></p>
+        <p><b>Don't miss out on this unforgettable event!</b></p>
+        <p><strong>Note:</strong><br>Spots will sell out fast and are limited!</p>
+    </article>
+
+    <!-- Exercise 8-4: Usage of a Table -->
+    <h3>Fan Favorites</h3>
+    <table>
+        <caption>Top Rated Movies</caption>
+        <colgroup span="1"></colgroup>
+        <colgroup span="3"></colgroup>
+        <thead>
+            <tr>
+                <th rowspan="2"></th>
+                <th colspan="2">Two Years</th>
+                <th rowspan="2">Average Ratings</th>
+            </tr>
+            <tr>
+                <th scope="col">2022</th>
+                <th scope="col">2023</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Horror</th>
+                <td style="text-align: center;">Annabelle</td>
+                <td style="text-align: center;">Conjuring 2</td>
+                <td style="text-align: center;">98%</td>
+            </tr>
+            <tr>
+                <th scope="row">Action</th>
+                <td style="text-align: center;">Fast and Furious</td>
+                <td style="text-align: center;">Mission Impossible</td>
+                <td style="text-align: center;">94%</td>
+            </tr>
+            <tr>
+                <th scope="row">Romance</th>
+                <td style="text-align: center;">Pride and Prejudice</td>
+                <td style="text-align: center;">The Notebook</td>
+                <td style="text-align: center;">97%</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br />
+
+    <!-- 5 External Links -->
+    <div class="external-links">
+        <h3>Find Out More About Some of the Fan Favorites</h3>
+        <div>
+            <a href="https://www.imdb.com/title/tt3322940/plotsummary/" class="external-link">Movie 1 - IMDb</a>
+            <a href="https://www.imdb.com/title/tt0232500/plotsummary/" class="external-link">Movie 2 - IMDb</a>
+            <a href="https://www.imdb.com/title/tt0414387/plotsummary/" class="external-link">Movie 3 - IMDb</a>
+            <a href="https://www.imdb.com/title/tt3065204/plotsummary/" class="external-link">Movie 4 - IMDb</a>
+            <a href="https://www.imdb.com/title/tt0117060/plotsummary/" class="external-link">Movie 5 - IMDb</a>
+        </div>
+    </div>
+
+        <!-- Exercise 10-2: Embedding a Video Player -->
+        <h3>A Special Message</h3>
+        <!-- Added autoplay attribute and resized width/height attribute -->
+        <video width="420" height="360" controls autoplay muted>
+            <source src="minions.mp4" type="video/mp4">
+            <!-- Fallback content for browsers that don't support the video element or format -->
+            Sorry, your browser doesn't support HTML5 video.
+            You can
+            <a href="https://vlipsy.com/embed/CpfJjWWQ">watch the video here</a>.
+        </video>
+        <p>Have fun, but be nice to each other:</p>
+        <!-- Usage of an animated image -->
+        <img src="minion.gif" alt="Animated Image">
+        <br>
+        <!-- Exercise 7-3: Responsive Images (2) -->
+        <h3>World Tour Cinemas Gallery</h3>
+        <p>
+            <picture>
+                <source media="(min-width: 480px)" srcset="gallery1.jpg 1200w, gallery1.jpg 800w">
+                <img src="gallery1.jpg" alt="movie theater showroom" sizes="80vw">
+            </picture>
+        </p>
+        <p>
+            <picture>
+                <source media="(min-width: 480px)" srcset="gallery2.jpg 1200w, gallery2.jpg 800w">
+                <img src="gallery2.jpg" alt="movie theater popcorn" sizes="80vw">
+            </picture>
+        </p>
+
+        <!-- Exercise 5-3: Footer with the World Tour Cinemas Location and Hours of Operation -->
+        <footer>
+            <div id="about">
+
+                <p>Location:</p>
+                <address>
+                    123 Movie Lane<br>
+                    Cityville, State 12345<br>
+                    United States
+                </address>
+                <p>Hours of Operation:</p>
+                <p>
+                    Mondays - Fridays: <time>10:00 AM - 12:00 PM</time><br />
+                    Saturdays - Sundays: <time>9:00 AM - 3:00 AM</time>
+                </p>
+                <!-- Email Hyperlink -->
+                <p>
+                    Email:
+                    <a href="mailto:worldtourcinemas@outlook.com">worldtourcinemas@outlook.com</a>
+                </p>
+            </div>
+            <!-- Exercise 5-3: Copyright Attribute -->
+            <small>All content copyright &copy; 2024, World Tour Cinemas and Atia Hiba</small>
+        </footer>
+</body>
+</html>
+
+

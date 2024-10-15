@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>World Tour Cinemas FAQ's</title>
+    <!-- Exercise 13-8: Linking External Style Sheet -->
+    <link rel="stylesheet" href="faqstyles.css">
+    <!-- Below: Link from Google Web Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Marko+One' rel='stylesheet' type='text/css'>
+    <!--<style>
+        @import url(faqstyles.css);
+        </style> -->
+    <style>
+        nav ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+
+            nav ul li {
+                display: inline-block;
+                margin-right: 10px;
+            }
+
+        nav a {
+            text-decoration: none;
+            padding: 8px 12px;
+            border: 1px solid #008080;
+            color: #008080;
+            border-radius: 5px;
+        }
+
+            nav a:hover {
+                background-color: #008080;
+                color: #fff;
+            }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="index-link">Main</a></li>
+        </ul>
+    </nav>
+    <div id="header">
+        <h1>World Tour Cinemas &bull; FAQ's</h1>
+        <div id="info">
+            <p>
+                123 Movie Lane, Cityville, State 12345<br>
+                <span class="label">Hours: Mondays - Fridays:</span> 10:00AM - 12:00PM, <span class="label">Saturdays - Sundays:</span> 9:00AM - 3:00AM
+            </p>
+            <ul>
+                <li><a href="#foo">Directions</a></li>
+                <li><a href="#foo">Frequently Asked</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="directions">
+        <h2>Directions</h2>
+
+        <dl>
+            <dt>Where is the main entrance located?</dt>
+            <dd>The main entrance is located on the north side of Movie Lane.<span class="ans"> [answered]</span></dd>
+
+            <dt class="newque">Where should I park? &mdash; <strong>new question!</strong></dt>
+            <dd>There are two parking lots available, one at the front and one in the back.<span class="ans"> [answered]</span></dd>
+
+            <dt>Where are the restrooms located?</dt>
+            <dd>There are six restroom units for both men and women and they are each located at the end of each hallway.<span class="ans"> [answered]</span></dd>
+        </dl>
+    </div>
+
+    <div id="fa">
+
+        <h2>Frequently Asked</h2>
+
+        <dl>
+
+            <dt class="newque">Where can I get movie tickters? &mdash; <strong>new question!</strong></dt>
+            <dd>Movie tickets can be purchased either at the ticket booths in person or online through our website.<span class="ans"> [answered]</span></dd>
+
+            <dt>Can I select my own seats?</dt>
+            <dd>If you are a registered member, you have the option to select your seats based on your membership status.<span class="ans"> [answered]</span></dd>
+
+            <dt>Can I get refills on my snacks and beverages?</dt>
+            <dd>We <strong>only</strong> offer refiils for popcorn and standard<sup>*</sup> beverages.<span class="ans"> [answered]</span></dd>
+
+            <dt>Are teenagers allowed alone at all times?</dt>
+            <dd>Children under the age of 18 must be accomponied by an adult after 6pm.<span class="ans"> [answered]</span></dd>
+
+            <dt>Can I get a refund?</dt>
+            <dd>If a ticket has been punched, there are no refunds, but if it was not used, a refund can be issued over the counter at least 24 hours before the showing time.<span class="ans"> [answered]</span></dd>
+
+            <dt>How many times can I get refills?</dt>
+            <dd><strong>Great news!</strong> Refills are unlimited.<span class="ans"> [answered]</span></dd>
+        </dl>
+
+    </div>
+
+    <p class="attention"><sup>*</sup>For further questions or concerns, contact us.</p>
+</body>
+</html>
+
+
+
+
